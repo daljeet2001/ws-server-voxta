@@ -1,6 +1,7 @@
-import http from "http";
+import * as http from "http";
 import WebSocket, { WebSocketServer } from "ws";
 import { PrismaClient } from "@prisma/client";
+
 
 const prisma = new PrismaClient();
 const PORT = Number(process.env.WS_PORT);
