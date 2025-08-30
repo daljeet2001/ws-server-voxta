@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "npx prisma generate",
+    "postinstall": "prisma generate",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js"
@@ -11,11 +11,11 @@
   "dependencies": {
     "@prisma/client": "^5.22.0",
     "ws": "^8.18.3",
-    "prisma": "^5.16.2"
+    "prisma": "^5.16.2",
+    "@types/node": "^24.3.0",
+    "@types/ws": "^8.18.1"
   },
   "devDependencies": {
-    "@types/node": "^24.3.0",
-    "@types/ws": "^8.18.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.2"
   }
